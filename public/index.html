@@ -12,25 +12,38 @@
       type="application/javascript"
       src="https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/A-Frame.js"
     ></script>
+    <script>
+      alert("5 duild");
+      AFRAME.registerComponent("registerevents", {
+        init: function () {
+          const marker = this.el;
+          console.log("Testing", marker);
+          marker.addEventListener("markerFound", () => {
+            console.log("Marker Found");
+          });
+          marker.addEventListener("markerLost", () => {
+            console.log("Marker Lost");
+          });
+        },
+      });
+    </script>
   </head>
   <body>
     <p>Go Corona, Go</p>
-    <a-scene>
-      <a-marker preset="hiro">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: true;">
+      <a-marker registerevents preset="hiro" id="marker1">
         <!-- <a-box
+          position="0 1 -1"
           src="https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/Pampers.jpg"
         >
         </a-box> -->
         <a-entity
           position="0 0 0"
-          obj-model="./pony-diaper.obj"
-          scale="1 1 1"
+          gltf-model="https://raw.githubusercontent.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+          scale="0.05 0.05 0.05"
         ></a-entity>
       </a-marker>
       <a-camera camera></a-camera>
     </a-scene>
-    <script>
-      alert("5 duild");
-    </script>
   </body>
 </html>
