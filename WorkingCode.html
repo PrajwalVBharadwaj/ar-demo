@@ -12,6 +12,19 @@
       type="application/javascript"
       src="https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/A-Frame.js"
     ></script>
+    <script>
+      AFRAME.registerComponent("registerevents", {
+        init: function () {
+          const marker = this.el;
+          marker.addEventListener("markerFound", () => {
+            console.log("Marker Found");
+          });
+          marker.addEventListener("markerLost", () => {
+            console.log("Marker Lost");
+          });
+        },
+      });
+    </script>
   </head>
   <body>
     <p>Go Corona, Go</p>
