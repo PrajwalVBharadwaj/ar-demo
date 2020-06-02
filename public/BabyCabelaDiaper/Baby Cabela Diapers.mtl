@@ -1,0 +1,157 @@
+# Blender MTL File: 'Baby Cabela.blend'
+# Material Count: 14
+
+newmtl Material.042
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.991221 0.661161 1.000000
+Ke 1.600000 1.600000 1.600000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump -bm 5.000000 C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
+map_Ka  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
+map_Kd  C:\\Users\\Jorgebaby\\Pictures\\dreamy-moon-clipart-1.jpg
+map_Ke  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
+map_Ks  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
+map_Ns  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
+map_Tr  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
+map_d  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
+
+newmtl Material.043
+Ns 880.392157
+Ka 1.000000 1.000000 1.000000
+Kd 0.153551 0.566716 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.230326 0.850073 1.200000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material.044
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.187013 0.390713
+Ks 0.500000 0.500000 0.500000
+Ke 1.600000 0.467533 0.976781
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material.045
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.381395 0.794861
+Ks 1.000000 0.260212 0.796897
+Ke 1.350000 0.514883 1.073063
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd  C:\\Users\\Jorgebaby\\Desktop\\baby_miles__tails__prower_the_fox_by_angie__wolf-d997ifm.png
+
+newmtl Material.047
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.207745 0.098020 0.061337
+Ks 0.500000 0.500000 0.500000
+Ke 0.267471 0.126200 0.078972
+Ni 1.000000
+d 1.000000
+illum 0
+
+newmtl Material.048
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.058957 0.699958
+Ks 0.500000 0.500000 0.500000
+Ke 0.670000 0.049376 0.586214
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd  C:\\Users\\Jorgebaby\\Desktop\\baby_miles__tails__prower_the_fox_by_angie__wolf-d997ifm.png
+
+newmtl Material.049
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.353312 0.192726
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd  C:\\Users\\Jorgebaby\\Desktop\\cream_baby_by_kime_cupcake-d99bnzr.png
+
+newmtl Material.050
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.310784 0.211387
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd  C:\\Users\\Jorgebaby\\Desktop\\at__sonic_babies_by_psyhe_the_fox-d460wee.jpg
+
+newmtl Material.051
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.270341 0.137033
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd  C:\\Users\\Jorgebaby\\Desktop\\sonic_the_hedgehog_logo_by_jjteam.png
+
+newmtl Material.052
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.294838 0.639516
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd  C:\\Users\\Jorgebaby\\Desktop\\images.jpeg
+
+newmtl Material.054
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 1.536000 1.536000 1.536000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd  amy_rose__sonic_logo_by_amies_roses-d6chzhe.png
+
+newmtl Material.072
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 1.600000 1.600000 1.600000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material.073
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.776000 0.776000 0.776000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material.074
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.800000 0.800000 0.800000
+Ni 1.000000
+d 1.000000
+illum 0
