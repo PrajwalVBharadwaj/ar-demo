@@ -18,7 +18,7 @@
       src="https://hammerjs.github.io/dist/hammer.min.js"
     ></script>
     <script>
-      alert("Build : 100");
+      alert("Build : 101 (New model)");
       AFRAME.registerComponent("registerevents", {
         init: function () {
           var element = document.querySelector("body");
@@ -59,9 +59,9 @@
 
           hammertime.on("pinch", (ev) => {
             let scale = {
-              x: ev.scale * 0.05,
-              y: ev.scale * 0.05,
-              z: ev.scale * 0.05,
+              x: ev.scale * 0.5,
+              y: ev.scale * 0.5,
+              z: ev.scale * 0.5,
             };
             // alert(scale);
             model.setAttribute("scale", scale);
@@ -85,8 +85,8 @@
             id="beachBall"
             obj-model="obj:url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/BabyCabelaDiapers.obj);
                        mtl: url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/BabyCabelaDiapers.mtl)"
-            scale="0.05 0.05 0.05"
-            position="0 -2 0"
+            scale="0.4 0.4 0.4"
+            position="0 0 0"
           ></a-entity>
         </a-marker>
       </a-camera>
