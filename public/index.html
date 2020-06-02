@@ -18,12 +18,20 @@
       src="https://hammerjs.github.io/dist/hammer.min.js"
     ></script>
     <script>
-      alert("29 duild");
+      alert("Build : 95");
       AFRAME.registerComponent("registerevents", {
         init: function () {
           var element = document.querySelector("body");
           this.marker = document.querySelector("a-marker");
           var model = document.getElementById("beachBall");
+
+          this.marker.addEventListener("markerFound", () => {
+            // alert("Marker found");
+          });
+          this.marker.addEventListener("markerLost", () => {
+            // alert("Marker Lost");
+          });
+
           var hammertime = new Hammer(element);
           var pinch = new Hammer.Pinch(); // Pinch is not by default in the recognisers
           hammertime.add(pinch); // add it to the Manager instance
@@ -32,21 +40,31 @@
             let rotation = model.getAttribute("rotation");
             switch (ev.direction) {
               case 2:
-                rotation.y = rotation.y + 4;
+                rotation.y = rotation.y + 6;
                 break;
               case 4:
-                rotation.y = rotation.y - 4;
+                rotation.y = rotation.y - 6;
                 break;
               case 8:
-                rotation.x = rotation.x + 4;
+                rotation.x = rotation.x + 6;
                 break;
               case 16:
-                rotation.x = rotation.x - 4;
+                rotation.x = rotation.x - 6;
                 break;
               default:
                 break;
             }
             model.setAttribute("rotation", rotation);
+          });
+
+          hammertime.on("pinch", (ev) => {
+            let scale = {
+              x: ev.scale * 0.05,
+              y: ev.scale * 0.05,
+              z: ev.scale * 0.05,
+            };
+            // alert(scale);
+            model.setAttribute("scale", scale);
           });
         },
       });
@@ -55,16 +73,23 @@
   <body>
     <p>Go Corona, Go</p>
     <a-scene arjs="debugUIEnabled: true;">
-      <a-marker registerevents preset="hiro" id="marker1" smooth="true">
-        <a-entity
-          id="beachBall"
-          obj-model="obj:url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BeachBall.obj);
-          mtl: url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BeachBall.mtl)"
-          scale="0.03 0.03 0.03"
-          position="-0.5 0 0"
-        ></a-entity>
-      </a-marker>
-      <a-camera camera></a-camera>
+      <a-camera camera wasd-controls="acceleration: 10">
+        <a-marker
+          registerevents
+          type="pattern"
+          url="https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/pattern-Axis.patt"
+          id="marker1"
+          smooth="true"
+        >
+          <a-entity
+            id="beachBall"
+            obj-model="obj:url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BeachBall.obj);
+                       mtl: url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BeachBall.mtl)"
+            scale="0.05 0.05 0.05"
+            position="0 -2 0"
+          ></a-entity>
+        </a-marker>
+      </a-camera>
     </a-scene>
   </body>
 </html>
