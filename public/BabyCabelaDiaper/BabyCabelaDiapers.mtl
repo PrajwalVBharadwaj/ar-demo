@@ -10,14 +10,14 @@ Ke 1.600000 1.600000 1.600000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Bump -bm 5.000000 C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
-map_Ka  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
-map_Kd  C:\\Users\\Jorgebaby\\Pictures\\dreamy-moon-clipart-1.jpg
-map_Ke  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
-map_Ks  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
-map_Ns  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
-map_Tr  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
-map_d  C:\\Users\\Jorgebaby\\Pictures\\free-printable-baby-scrapbook-stickers_76625.jpg
+map_Bump -bm 5.000000 https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/free-printable-baby-scrapbook-stickers_76625.jpg
+map_Ka  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/free-printable-baby-scrapbook-stickers_76625.jpg
+map_Kd  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/dreamy-moon-clipart-1.jpg
+map_Ke  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/free-printable-baby-scrapbook-stickers_76625.jpg
+map_Ks  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/free-printable-baby-scrapbook-stickers_76625.jpg
+map_Ns  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/free-printable-baby-scrapbook-stickers_76625.jpg
+map_Tr  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/free-printable-baby-scrapbook-stickers_76625.jpg
+map_d  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/free-printable-baby-scrapbook-stickers_76625.jpg
 
 newmtl Material.043
 Ns 880.392157
@@ -48,7 +48,7 @@ Ke 1.350000 0.514883 1.073063
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd  C:\\Users\\Jorgebaby\\Desktop\\baby_miles__tails__prower_the_fox_by_angie__wolf-d997ifm.png
+map_Kd  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/baby_miles__tails__prower_the_fox_by_angie__wolf-d997ifm.png
 
 newmtl Material.047
 Ns 96.078431
@@ -69,7 +69,7 @@ Ke 0.670000 0.049376 0.586214
 Ni 1.000000
 d 1.000000
 illum 0
-map_Kd  C:\\Users\\Jorgebaby\\Desktop\\baby_miles__tails__prower_the_fox_by_angie__wolf-d997ifm.png
+map_Kd  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/baby_miles__tails__prower_the_fox_by_angie__wolf-d997ifm.png
 
 newmtl Material.049
 Ns 96.078431
@@ -80,7 +80,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 0
-map_Kd  C:\\Users\\Jorgebaby\\Desktop\\cream_baby_by_kime_cupcake-d99bnzr.png
+map_Kd  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/cream_baby_by_kime_cupcake-d99bnzr.png
 
 newmtl Material.050
 Ns 96.078431
@@ -91,7 +91,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 0
-map_Kd  C:\\Users\\Jorgebaby\\Desktop\\at__sonic_babies_by_psyhe_the_fox-d460wee.jpg
+map_Kd  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/at__sonic_babies_by_psyhe_the_fox-d460wee.jpg
 
 newmtl Material.051
 Ns 96.078431
@@ -102,7 +102,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 0
-map_Kd  C:\\Users\\Jorgebaby\\Desktop\\sonic_the_hedgehog_logo_by_jjteam.png
+map_Kd  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/sonic_the_hedgehog_logo_by_jjteam.png
 
 newmtl Material.052
 Ns 96.078431
@@ -113,7 +113,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 0
-map_Kd  C:\\Users\\Jorgebaby\\Desktop\\images.jpeg
+map_Kd  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/images.jpeg
 
 newmtl Material.054
 Ns 96.078431
@@ -124,7 +124,7 @@ Ke 1.536000 1.536000 1.536000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd  amy_rose__sonic_logo_by_amies_roses-d6chzhe.png
+map_Kd  https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/amy_rose__sonic_logo_by_amies_roses-d6chzhe.png
 
 newmtl Material.072
 Ns 96.078431
