@@ -18,7 +18,7 @@
       src="https://hammerjs.github.io/dist/hammer.min.js"
     ></script>
     <script>
-      alert("Build : 101 (New model)");
+      alert("Build : 117");
       AFRAME.registerComponent("registerevents", {
         init: function () {
           var element = document.querySelector("body");
@@ -68,11 +68,19 @@
           });
         },
       });
+      AFRAME.registerComponent("click-box", {
+        init: () => {
+          var box1 = document.getElementById("box1");
+          box1.addEventListener("click", (e) => {
+            alert("Box clicked");
+          });
+        },
+      });
     </script>
   </head>
   <body>
     <p>Go Corona, Go</p>
-    <a-scene arjs="debugUIEnabled: true;">
+    <a-scene arjs="debugUIEnabled: true;" cursor="rayOrigin: mouse">
       <a-camera camera wasd-controls="acceleration: 10">
         <a-marker
           registerevents
@@ -81,13 +89,23 @@
           id="marker1"
           smooth="true"
         >
-          <a-entity
-            id="beachBall"
-            obj-model="obj:url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/BabyCabelaDiapers.obj);
-                       mtl: url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BabyCabelaDiaper/BabyCabelaDiapers.mtl)"
-            scale="0.4 0.4 0.4"
-            position="0 0 0"
-          ></a-entity>
+          <a-box
+            click-box
+            id="box1"
+            color="tomato"
+            depth="1"
+            height="1"
+            width="1"
+            position="1 0 -1"
+          ></a-box>
+          <a-box
+            id="box2"
+            color="blue"
+            depth="1"
+            height="1"
+            width="1"
+            position="-2 0 -1"
+          ></a-box>
         </a-marker>
       </a-camera>
     </a-scene>
