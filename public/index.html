@@ -13,18 +13,18 @@
       type="application/javascript"
       src="https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/A-Frame.js"
     ></script>
+    <script src="https://rawgit.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-click-events/events.js"></script>
     <script
       type="application/javascript"
       src="https://hammerjs.github.io/dist/hammer.min.js"
     ></script>
     <script>
-      alert("Build : 117");
+      alert("Build : 137");
       AFRAME.registerComponent("registerevents", {
         init: function () {
           var element = document.querySelector("body");
           this.marker = document.querySelector("a-marker");
           var model = document.getElementById("beachBall");
-
           this.marker.addEventListener("markerFound", () => {
             // alert("Marker found");
           });
@@ -70,42 +70,47 @@
       });
       AFRAME.registerComponent("click-box", {
         init: () => {
+          let isSecondVisible = false;
+          let secondElement = null;
           var box1 = document.getElementById("box1");
+          let marker = document.querySelector("a-marker");
+          let scene = document.querySelector("a-scene");
           box1.addEventListener("click", (e) => {
-            alert("Box clicked");
+            alert("Clicked");
+            if (!isSecondVisible) {
+              // secondElement = document.createElement("a-box");
+              // secondElement.setAttribute("position", { x: -2, y: 0, z: 0 });
+              // secondElement.setAttribute("depth", 0.8);
+              // secondElement.setAttribute("width", 0.8);
+              // secondElement.setAttribute("height", 0.8);
+              // secondElement.setAttribute("color", "blue");
+              // marker.appendChild(secondElement);
+              // scene.appendChild(secondElement);
+              box1.setAttribute("color", "blue");
+              isSecondVisible = !isSecondVisible;
+            } else {
+              box1.setAttribute("color", "tomato");
+              isSecondVisible = !isSecondVisible;
+              // this.marker.removeChild(secondElement);
+            }
           });
         },
       });
     </script>
   </head>
   <body>
-    <p>Go Corona, Go</p>
-    <a-scene arjs="debugUIEnabled: true;" cursor="rayOrigin: mouse">
+    <a-scene arjs="debugUIEnabled: true;">
       <a-camera camera wasd-controls="acceleration: 10">
         <a-marker
           registerevents
+          emitevents="true"
+          cursor="rayOrigin: mouse"
           type="pattern"
           url="https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/pattern-Axis.patt"
           id="marker1"
           smooth="true"
         >
-          <a-box
-            click-box
-            id="box1"
-            color="tomato"
-            depth="1"
-            height="1"
-            width="1"
-            position="1 0 -1"
-          ></a-box>
-          <a-box
-            id="box2"
-            color="blue"
-            depth="1"
-            height="1"
-            width="1"
-            position="-2 0 -1"
-          ></a-box>
+        <a-entity gltf-model="url('')" scale="0.2 0.2 0.2">
         </a-marker>
       </a-camera>
     </a-scene>
