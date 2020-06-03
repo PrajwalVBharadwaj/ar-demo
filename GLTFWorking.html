@@ -13,17 +13,18 @@
       type="application/javascript"
       src="https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/A-Frame.js"
     ></script>
+    <script src="https://rawgit.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-click-events/events.js"></script>
     <script
       type="application/javascript"
       src="https://hammerjs.github.io/dist/hammer.min.js"
     ></script>
     <script>
+      alert("Build : 137");
       AFRAME.registerComponent("registerevents", {
         init: function () {
           var element = document.querySelector("body");
           this.marker = document.querySelector("a-marker");
           var model = document.getElementById("beachBall");
-
           this.marker.addEventListener("markerFound", () => {
             // alert("Marker found");
           });
@@ -58,42 +59,67 @@
 
           hammertime.on("pinch", (ev) => {
             let scale = {
-              x: ev.scale * 0.05,
-              y: ev.scale * 0.05,
-              z: ev.scale * 0.05,
+              x: ev.scale * 0.5,
+              y: ev.scale * 0.5,
+              z: ev.scale * 0.5,
             };
             // alert(scale);
             model.setAttribute("scale", scale);
           });
         },
       });
+      AFRAME.registerComponent("click-box", {
+        init: () => {
+          let isSecondVisible = false;
+          let secondElement = null;
+          var box1 = document.getElementById("box1");
+          let marker = document.querySelector("a-marker");
+          let scene = document.querySelector("a-scene");
+          box1.addEventListener("click", (e) => {
+            alert("Clicked");
+            if (!isSecondVisible) {
+              // secondElement = document.createElement("a-box");
+              // secondElement.setAttribute("position", { x: -2, y: 0, z: 0 });
+              // secondElement.setAttribute("depth", 0.8);
+              // secondElement.setAttribute("width", 0.8);
+              // secondElement.setAttribute("height", 0.8);
+              // secondElement.setAttribute("color", "blue");
+              // marker.appendChild(secondElement);
+              // scene.appendChild(secondElement);
+              box1.setAttribute("color", "blue");
+              isSecondVisible = !isSecondVisible;
+            } else {
+              box1.setAttribute("color", "tomato");
+              isSecondVisible = !isSecondVisible;
+              // this.marker.removeChild(secondElement);
+            }
+          });
+        },
+      });
     </script>
   </head>
   <body>
-    <a-scene>
+    <a-scene arjs="debugUIEnabled: true;">
+      <a-assets>
+        <a-asset-item
+          id="mymodel"
+          src="https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/diaper.glb"
+        />
+      </a-assets>
       <a-camera camera wasd-controls="acceleration: 10">
         <a-marker
           registerevents
+          emitevents="true"
+          cursor="rayOrigin: mouse"
           type="pattern"
           url="https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/pattern-Axis.patt"
           id="marker1"
           smooth="true"
         >
           <a-entity
-            id="beachBall"
-            obj-model="obj:url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BeachBall.obj);
-                       mtl: url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BeachBall.mtl)"
-            scale="0.05 0.05 0.05"
-            position="0 -2 0"
-          ></a-entity>
-        </a-marker>
-        <a-marker registerevents preset="hiro">
-          <a-entity
-            id="beachBall"
-            obj-model="obj:url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BearModel.obj);
-                       mtl: url(https://cdn.jsdelivr.net/gh/PrajwalVBharadwaj/ar-demo/public/BearModel.mtl)"
-            scale="0.05 0.05 0.05"
-            position="0 -2 0"
+            gltf-model="#mymodel"
+            scale="1 1 1"
+            position="0 0 0"
           ></a-entity>
         </a-marker>
       </a-camera>
